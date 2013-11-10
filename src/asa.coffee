@@ -2,6 +2,10 @@
 # If it is true call cb(),
 # Otherwise retry in 50ms
 
-module.exports = once = (test, cb) ->
-    if test() then cb() else setTimeout (-> once(test, cb)), 50
+module.exports = asa = (test, cb) ->
+    loop_timer = setInterval ->
+        if test()
+            clearInterval loop_timer
+            cb()
+    , 50
 
