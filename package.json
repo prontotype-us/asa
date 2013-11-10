@@ -1,0 +1,22 @@
+{
+    "name": "asa",
+    "version": "0.1.0",
+    "description": "as soon as something, do something",
+    "homepage": "http://github.com/spro/asa",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/spro/asa.git"
+    },
+    "author": {
+        "name": "Sean Robertson",
+        "url": "http://sprobertson.com"
+    },
+    "bin": {
+        "asa": "bin/asa.js"
+    },
+    "scripts": {
+        "build": "./build.sh"
+    },
+    "dependencies": {
+    }
+}
