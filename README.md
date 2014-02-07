@@ -7,7 +7,7 @@ asa = require 'asa'
 
 # is_ready: a function that determines readiness.
 ready = false
-is_ready = -> dogs
+is_ready = -> return ready?
 
 # doit: a function that does something.
 doit = -> console.log 'it has been done'
